@@ -51,7 +51,7 @@ if ( $@ ) {
 
     $seq = pack('C*', 0xa7, 0xda, 0xaa, 0xba);
     like($zhongyu, qr/$seq/, "Set destination charset (big5)");
-    diag($zhongyu);
+    #diag($zhongyu);
     #diag(join(", ",map { sprintf("0x%.2x", $_) } unpack("C*", $zhongyu) )
 	#);
 }
